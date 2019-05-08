@@ -1,0 +1,14 @@
+(1)run main.py
+line 58 and 67 is the file of training data and training labels,then get three files:
+original_60000.npy,
+aim_cluster_kmean_60000.npy,
+aim_cluster_real_60000.npy
+
+(2)run AutoEncoder5.py
+line 32 and 35 can set the left side and right side of autoencoder,line 245 is the dictionary of model '000.pth'and line 254 is the encoded part of training data '000.npy'
+
+(3)run knn4.py
+prepare encoded test data for knn,line 90 shows the root of test data,may need to download,and finally get the encoded part of testdata '009.npy'
+
+(4)run knn.py
+with '000.npy' and '009.npy' and their labels to evaluate the accuracy 
